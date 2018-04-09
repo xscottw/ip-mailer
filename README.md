@@ -1,27 +1,10 @@
 # ip-mailer
 simple script to send you an e-mail if your ip changes
 so for this to work you should have a mail client installed, I think I used the one in my arch install by default something like MTA or simple MTA and also ca-certificates need to be installed if not already.
-then you need to touch ~/.msmtprc 
-inside msmtprc you should have something like this (it may change depending on e-mail provider so you might have to search a bit here is gmails)
+then you need to touch ~/.msmtprc or copy the one in the repo replacing username@domain.com and yourpassword.
 
 
-account default
-
-auth on
-host smtp.gmail.com
-protocol smtp
-auth on
-tls on
-tls_starttls on
-tls_certcheck on
-tls_trust_file /etc/ssl/certs/ca-certificates.crt
-from email@domain.com
-user email@domain.com
-password password
-
-
-
-The user configuration file must be explicitly readable/writeable by its owner or msmtp will fail:
+The user configuration file (.msmtprc) must be explicitly readable/writeable by its owner or msmtp will fail:
 
 chmod 600 ~/.msmtprc
 
