@@ -26,3 +26,5 @@ Dependencies:
 Curl
 
 MSMTP
+
+CA-Certificates
