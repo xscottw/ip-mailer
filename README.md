@@ -19,3 +19,10 @@ mail -s "Testbug" </dev/null "email@domain.com"
 
 more info on msmtp can be found here
 https://wiki.archlinux.org/index.php/msmtp#Password_management
+
+
+Dependencies:
+
+Curl
+
+MSMTP
